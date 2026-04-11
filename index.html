@@ -2,7 +2,10 @@
 <html lang="de">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
     <title>Lom-Ali Imadaev – Account Executive</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link
@@ -16,6 +19,20 @@
         box-sizing: border-box;
         margin: 0;
         padding: 0;
+      }
+
+      html,
+      body {
+        max-width: 100%;
+        overflow-x: hidden;
+      }
+
+      img,
+      svg,
+      video,
+      canvas {
+        max-width: 100%;
+        height: auto;
       }
 
       :root {
@@ -508,7 +525,7 @@
         }
       }
 
-      /* RESPONSIVE */
+      /* RESPONSIVE - Tablet */
       @media (max-width: 900px) {
         nav {
           padding: 1rem 2rem;
@@ -518,29 +535,157 @@
         }
         .hero {
           grid-template-columns: 1fr;
+          min-height: auto;
         }
         .hero-left {
-          padding: 5rem 2rem 2rem;
+          padding: 5rem 2.5rem 2rem;
         }
         .hero-right {
-          padding: 2rem;
+          padding: 1.5rem 2.5rem 4rem;
+          justify-content: flex-start;
         }
         .photo-wrap img {
-          width: 240px;
-          height: 300px;
+          width: 260px;
+          height: 320px;
+        }
+        .stat-badge {
+          right: -1rem;
+          bottom: -1.5rem;
         }
         section {
-          padding: 4rem 2rem;
+          padding: 4rem 2.5rem;
         }
         .wins-grid {
           grid-template-columns: 1fr;
+          gap: 1px;
         }
         .skills-grid {
           grid-template-columns: 1fr;
+          gap: 2rem;
         }
         .exp-item {
           grid-template-columns: 1fr;
           gap: 0.3rem;
+        }
+        .hero-right::before {
+          display: none;
+        }
+      }
+
+      /* RESPONSIVE - Mobile */
+      @media (max-width: 480px) {
+        nav {
+          padding: 0.9rem 1.2rem;
+        }
+        .nav-logo {
+          font-size: 1rem;
+        }
+
+        .hero-left {
+          padding: 4.5rem 1.2rem 1.5rem;
+        }
+        .hero-right {
+          padding: 1rem 1.2rem 3.5rem;
+          overflow: hidden;
+        }
+        .hero-name {
+          font-size: 3rem;
+        }
+        .hero-tagline {
+          font-size: 0.92rem;
+          max-width: 100%;
+        }
+        .hero-cta {
+          flex-direction: column;
+        }
+        .btn {
+          width: 100%;
+          justify-content: center;
+          padding: 1rem;
+        }
+
+        .photo-wrap {
+          max-width: 100%;
+        }
+        .photo-wrap img {
+          width: min(200px, 70vw);
+          height: auto;
+          aspect-ratio: 4/5;
+        }
+        .photo-line {
+          display: none;
+        }
+        .stat-badge {
+          right: 0;
+          bottom: -1rem;
+          padding: 0.8rem 1.2rem;
+        }
+        .stat-num {
+          font-size: 1.8rem;
+        }
+
+        section {
+          padding: 3rem 1.2rem;
+          overflow: hidden;
+        }
+        .section-title {
+          font-size: 1.8rem;
+        }
+
+        .win-card {
+          padding: 1.8rem 1.2rem;
+        }
+        .win-num {
+          font-size: 2rem;
+        }
+
+        .exp-item {
+          padding: 1.8rem 0;
+        }
+        .exp-role {
+          font-size: 1.1rem;
+        }
+        .exp-highlight {
+          font-size: 0.8rem;
+          max-width: 100%;
+          word-break: break-word;
+        }
+
+        .contact-links {
+          flex-direction: column;
+          align-items: center;
+        }
+        .contact-link {
+          width: 100%;
+          justify-content: center;
+          max-width: 280px;
+        }
+
+        .skills-grid {
+          gap: 1.5rem;
+        }
+        .tag {
+          font-size: 0.75rem;
+          padding: 0.3rem 0.7rem;
+        }
+        .skill-tags {
+          gap: 0.4rem;
+        }
+      }
+
+      /* RESPONSIVE - Small mobile */
+      @media (max-width: 360px) {
+        .hero-name {
+          font-size: 2.4rem;
+        }
+        .photo-wrap img {
+          width: min(170px, 65vw);
+        }
+        section {
+          padding: 2.5rem 1rem;
+        }
+        .wins-grid {
+          gap: 1px;
         }
       }
     </style>
@@ -566,7 +711,7 @@
           Ich spreche die Sprache des CFO — und schließe den Deal.
         </p>
         <div class="hero-cta">
-          <a href="mailto:lomaliimadaev@gmail.com" class="btn btn-primary"
+          <a href="mailto:lomaliimadaev@icloud.com" class="btn btn-primary"
             >Kontakt aufnehmen</a
           >
           <a href="CV_Lom_Imadaev_AE.pdf" class="btn btn-secondary" download
@@ -770,7 +915,7 @@
       <h2 class="section-title">Kontakt</h2>
       <p class="contact-sub">Ich freue mich auf den Austausch.</p>
       <div class="contact-links">
-        <a href="mailto:lomaliimadaev@gmail.com" class="contact-link">
+        <a href="mailto:lomaliimadaev@icloud.com" class="contact-link">
           <svg
             width="15"
             height="15"
@@ -784,7 +929,7 @@
             />
             <polyline points="22,6 12,12 2,6" />
           </svg>
-          lomaliimadaev@gmail.com
+          lomaliimadaev@icloud.com
         </a>
         <a href="tel:015127600077" class="contact-link">
           <svg

@@ -208,7 +208,7 @@ nav {
     rgba(26, 58, 92, 0.06),
     rgba(184, 146, 42, 0.08)
   );
-  border-radius: 50%;
+
   pointer-events: none;
 }
 
@@ -225,7 +225,6 @@ nav {
   object-position: top center;
   display: block;
   border: 2px solid var(--border);
-  border-radius: 50%;
 }
 
 .photo-line {
@@ -235,7 +234,7 @@ nav {
   right: 16px;
   bottom: -16px;
   border: 1.5px solid var(--gold);
-  border-radius: 50%;
+
   pointer-events: none;
   z-index: -1;
 }
@@ -721,5 +720,37 @@ section {
 
   section {
     padding: 2.5rem 1rem;
+  }
+}
+
+/* ── Footer ──────────────────────────────────────────── */
+
+.site-footer {
+  background: var(--dark);
+  padding: 1.5rem 8rem;
+  display: flex;
+  justify-content: center;
+}
+
+.legal-links {
+  display: flex;
+  gap: 2rem;
+}
+
+.legal-links a {
+  font-size: 0.75rem;
+  letter-spacing: 0.1em;
+  color: var(--muted);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.legal-links a:hover {
+  color: var(--gold);
+}
+
+@media (max-width: 480px) {
+  .site-footer {
+    padding: 1.2rem;
   }
 }

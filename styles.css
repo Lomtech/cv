@@ -9,12 +9,12 @@
 :root {
   --ink: #1a1a22;
   --muted: #5a5a6e;
-  --gold: #b5934a;
-  --gold-light: #d4b06a;
+  --gold: #ffffff;
+  --gold-light: #364cd8;
   --rule: #e0d9cc;
   --bg: #faf9f6;
   --white: #ffffff;
-  --sidebar-bg: #1e1e28;
+  --sidebar-bg: #000000;
   --sidebar-text: #e8e4d8;
   --sidebar-muted: #9a9490;
 }

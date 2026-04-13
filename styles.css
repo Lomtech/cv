@@ -307,3 +307,27 @@ body {
     font-size: 0.68rem;
   }
 }
+
+.cv-footer {
+  text-align: center;
+  padding: 1.2rem 2rem;
+  font-family: "Outfit", sans-serif;
+  font-size: 0.78rem;
+  color: #888;
+  letter-spacing: 0.04em;
+}
+
+.cv-footer a {
+  color: #888;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.cv-footer a:hover {
+  color: #333;
+}
+
+.footer-sep {
+  margin: 0 0.6rem;
+  opacity: 0.5;
+}

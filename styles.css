@@ -9,12 +9,12 @@
 :root {
   --ink: #1a1a22;
   --muted: #5a5a6e;
-  --gold: #364cd8;
-  --gold-light: #364cd8;
+  --gold: #b5934a;
+  --gold-light: #d4b06a;
   --rule: #e0d9cc;
   --bg: #faf9f6;
   --white: #ffffff;
-  --sidebar-bg: #000000;
+  --sidebar-bg: #1e1e28;
   --sidebar-text: #e8e4d8;
   --sidebar-muted: #9a9490;
 }
@@ -318,7 +318,7 @@ body {
 }
 
 .cv-footer a {
-  color: #364cd8;
+  color: #888;
   text-decoration: none;
   transition: color 0.2s;
 }

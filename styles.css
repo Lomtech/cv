@@ -331,3 +331,65 @@ body {
   margin: 0 0.6rem;
   opacity: 0.5;
 }
+
+/* ══════════════ LEGAL PAGES (Impressum / Datenschutz) ══════════════ */
+.legal-page {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 6rem 2rem 6rem;
+}
+
+.legal-page h1 {
+  font-family: "Cormorant Garamond", serif;
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 700;
+  color: var(--ink);
+  margin-bottom: 0.5rem;
+}
+
+.legal-page .gold-rule {
+  height: 1px;
+  background: linear-gradient(to right, var(--gold), transparent);
+  margin-bottom: 2.5rem;
+}
+
+.legal-page h2 {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: var(--gold);
+  margin: 2rem 0 0.5rem;
+}
+
+.legal-page p,
+.legal-page address {
+  font-size: 0.95rem;
+  color: var(--muted);
+  line-height: 1.8;
+  font-style: normal;
+}
+
+.legal-page a {
+  color: var(--gold);
+  text-decoration: none;
+}
+
+.legal-page a:hover {
+  text-decoration: underline;
+}
+
+.back-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.8rem;
+  letter-spacing: 0.1em;
+  color: var(--muted);
+  text-decoration: none;
+  margin-bottom: 3rem;
+  transition: color 0.2s;
+}
+
+.back-link:hover {
+  color: var(--ink);
+}
